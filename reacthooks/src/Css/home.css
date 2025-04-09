@@ -1,0 +1,436 @@
+/* home.css */
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8; /* Um tom de fundo mais suave */
+    color: #333; /* Cor de texto primária mais escura para melhor leitura */
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-bottom: 40px; /* Adiciona um pouco de espaço na parte inferior */
+  }
+
+  /* Hero Section */
+  .hero {
+  /* background: linear-gradient(135deg, #FF8C00, #A78BFA);  cores teste*/
+  /* background: linear-gradient(135deg, #FF0000, #800080);  cores teste*/
+    background: linear-gradient(135deg, #800080, #A78BFA);
+  color: white;
+  text-align: center;
+   padding: 150px 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+   box-sizing: border-box;
+  display: flex;
+    justify-content: center;
+     align-items: center;
+    }
+
+
+  .hero-content {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-content h1 {
+    font-size: 3.8em; /* Título ainda mais impactante */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+    animation: fadeInUp 1s ease-out; /* Animação sutil ao carregar */
+  }
+
+  .hero-content p {
+    font-size: 1.4em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+    animation: fadeInUp 1.2s ease-out 0.2s forwards; /* Atraso na animação */
+    transform: translateY(20px); /* Começa um pouco abaixo */
+    opacity: 0; /* Começa invisível */
+  }
+
+  .call-to-action {
+    background-color: #ff7849; /* Um laranja energético */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.4s ease-out 0.4s forwards; /* Mais um atraso */
+    transform: translateY(20px); /* Começa um pouco abaixo */
+    opacity: 0; /* Começa invisível */
+  }
+
+  .call-to-action:hover {
+    background-color: #e06438; /* Tom mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .call-to-action:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/125171.jpg'); /* Substitua pela URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Uma leve sobreposição para não distrair do texto */
+  }
+
+  /* Featured Pet Section */
+  .featured-pet {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    margin: 30px auto; /* Centraliza com mais margem */
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .featured-pet h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .pet-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pet-icon {
+    font-size: 4em;
+    margin-right: 30px;
+    color: #7c3aed; /* Roxo mais suave */
+    animation: pulse 1.5s infinite alternate; /* Animação sutil no ícone */
+  }
+
+  .pet-details {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .pet-details h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .pet-type {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+
+  .pet-type-label {
+    font-weight: bold;
+    color: #7c3aed;
+  }
+
+  .pet-description {
+    color: #444;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .learn-more {
+    background-color: #7c3aed;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .learn-more:hover {
+    background-color: #6d28d9;
+    transform: translateY(-1px);
+  }
+
+  /* Services Section */
+  .services {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .services h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Largura mínima maior */
+    gap: 30px; /* Espaçamento maior entre os itens */
+    max-width: 1000px; /* Largura máxima maior */
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .service-icon {
+    font-size: 3em;
+    color: #ffb74d; /* Amarelo mais quente */
+    margin-bottom: 15px;
+  }
+
+  .service-item h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .service-item p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .service-button {
+    background-color: #ffb74d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease;
+  }
+
+  .service-button:hover {
+    background-color: #f57c00; /* Tom mais escuro ao passar o mouse */
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .testimonials h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .testimonial-slider {
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: auto; /* Permite rolagem horizontal se houver muitos depoimentos */
+    scroll-snap-type: x mandatory; /* Para rolagem suave entre os depoimentos */
+    padding-bottom: 20px; /* Espaço para a sombra */
+  }
+
+  .testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-right: 20px; /* Espaço entre os depoimentos */
+    flex: 0 0 auto; /* Não encolher, não esticar, largura automática */
+    width: 100%; /* Ocupa a largura total do slider */
+    max-width: 600px; /* Largura máxima do depoimento */
+    box-sizing: border-box;
+    scrollscroll-snap-align: start; /* Alinha o início de cada depoimento */
+}
+
+.testimonial:last-child {
+  margin-right: 0; /* Remove a margem do último depoimento */
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #777;
+  font-size: 0.9em;
+  text-align: right;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3em;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .featured-pet {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .pet-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .pet-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 3em;
+  }
+
+  .pet-details {
+    text-align: center;
+  }
+
+  .services {
+    padding: 50px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .service-item {
+    padding: 20px;
+  }
+
+  .service-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-slider {
+    padding-bottom: 10px; /* Ajusta o padding inferior para telas menores */
+  }
+
+  .testimonial {
+    margin-right: 15px;
+    padding: 20px;
+  }
+
+  .testimonial p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .call-to-action {
+    font-size: 1em;
+    padding: 12px 25px;
+  }
+
+  .featured-pet h2 {
+    font-size: 2em;
+  }
+
+  .services h2 {
+    font-size: 2em;
+  }
+
+  .testimonials h2 {
+    font-size: 2em;
+  }
+}

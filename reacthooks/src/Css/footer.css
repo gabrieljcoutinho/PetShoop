@@ -1,0 +1,67 @@
+/* Css/footer.css */
+
+.main-footer {
+    background-color: #252525; /* Light background */
+    color: #495057; /* Darker text for better readability */
+    padding: 30px 20px;
+    border-top: 1px solid #dee2e6; /* Light border */
+    font-size: 0.9em;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    order: 3; /* Place copyright at the bottom on smaller screens */
+    padding-left: 30rem;
+  }
+
+  .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+
+
+  .social-media {
+    display: flex;
+    gap: 15px;
+    order: 1; /* Place social media at the top on smaller screens */
+  }
+
+  .social-media a {
+    color: #6c757d; /* Secondary color for social icons */
+    font-size: 1.2em; /* Adjust icon size */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-media a:hover {
+    color: #495057; /* Darker shade on hover */
+  }
+
+  /* Media query for larger screens to align items horizontally */
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .copyright {
+      order: 2; /* Keep copyright in the middle on larger screens */
+    }
+
+    .social-media {
+      order: 3; /* Move social media to the right on larger screens */
+    }
+  }

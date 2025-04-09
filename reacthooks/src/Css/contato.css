@@ -1,0 +1,101 @@
+/* Css/contato.css */
+
+.container-contato {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 622px;
+}
+
+.container-contato h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-contato p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.botao-enviar {
+    background-color: #5cb85c; /* Um verde amigável para petshop */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #4cae4c;
+}
+
+.botao-enviar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.mensagem-sucesso {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mensagem-erro {
+    background-color: #fdd;
+    color: #e44;
+    padding: 15px;
+    border: 1px solid #fbb;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-group-erro input,
+.form-group-erro textarea {
+    border-color: #e44;
+    background-color: #ffe;
+}
+
+.erro-validacao {
+    color: #e44;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

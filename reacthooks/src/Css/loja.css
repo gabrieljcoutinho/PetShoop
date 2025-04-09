@@ -1,0 +1,221 @@
+/* Estilos gerais da página da loja */
+.loja-container {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos do banner da loja */
+.banner-loja {
+  /* background-color: #8e44ad; /* Removed the solid color */
+  background: linear-gradient(135deg, #800080, #A78BFA); /* Added the gradient */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.banner-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.button-destaque {
+  display: inline-block;
+  background-color: #ff6f61; /* Uma cor de destaque */
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-destaque:hover {
+  background-color: #e05f52;
+}
+
+/* Estilos das categorias */
+.categorias-loja {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.categorias-loja h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.lista-categorias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lista-categorias li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lista-categorias li a:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+/* Estilos dos produtos em destaque */
+.destaques-loja {
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.destaques-loja h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card-produto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.card-produto img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do card */
+  width: 500px; /* Define a largura fixa de 500 pixels */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  object-fit: cover; /* Recorta a imagem para cobrir o espaço, mantendo a proporção */
+}
+
+.card-produto h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-produto .preco {
+  color: #ff6f61;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.button-comprar {
+  background-color: #5cb85c; /* Cor de botão de compra */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-comprar:hover {
+  background-color: #4cae4c;
+}
+
+.ver-mais-produtos {
+  display: inline-block;
+  text-decoration: none;
+  color: #337ab7; /* Cor de link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.ver-mais-produtos:hover {
+  color: #23527c;
+}
+
+/* Estilos da seção de informações da loja */
+.info-loja {
+  background-color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.info-item {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.info-item i {
+  font-size: 2em; /* Ajuste o tamanho do ícone conforme necessário */
+  color: #ff6f61;
+  margin-bottom: 10px;
+}
+
+.info-item h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.info-item p {
+  color: #777;
+}
+
+/* Adaptações para telas menores (opcional) */
+@media (max-width: 768px) {
+  .lista-categorias {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .grid-produtos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .info-loja {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .info-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info-item:last-child {
+    border-bottom: none;
+  }
+}

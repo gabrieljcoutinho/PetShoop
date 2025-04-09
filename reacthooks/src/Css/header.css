@@ -1,0 +1,39 @@
+/* Css/header.css */
+.header {
+  background-color: #252525; /* Cor de fundo escura conforme solicitado */
+  color: #f8f9fa; /* Texto em branco para contraste */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.75rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+nav {
+  /* Agrupa a lista de links */
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #adb5bd; /* Um tom de cinza claro para os links */
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+  padding: 0.5rem 0;
+}
+
+.navLink:hover {
+  color: #fff; /* Branco ao passar o mouse para destacar */
+}
